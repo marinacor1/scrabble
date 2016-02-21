@@ -31,5 +31,10 @@ class ScrabbleTest < Minitest::Test
     assert_equal 0, Scrabble.new.score(nil)
   end
 
+  def test_it_can_score_made_up_word
+    assert_equal 16, Scrabble.new.score("dragonx")
+    assert_equal 25, Scrabble.new.score("wvzfb")
+  end
+
 
 end
