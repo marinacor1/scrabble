@@ -23,5 +23,9 @@ class ScrabbleTest < Minitest::Test
     assert_equal 8, Scrabble.new.score("HeLlO")
   end
 
+  def test_it_can_score_empty_word_as_0
+    assert_equal 0, Scrabble.new.score("")
+  end
+
 
 end
