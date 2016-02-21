@@ -19,5 +19,9 @@ class ScrabbleTest < Minitest::Test
     assert_equal 8, Scrabble.new.score("hello")
   end
 
+  def test_it_can_score_word_regardless_of_case
+    assert_equal 8, Scrabble.new.score("HeLlO")
+  end
+
 
 end
