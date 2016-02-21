@@ -27,5 +27,9 @@ class ScrabbleTest < Minitest::Test
     assert_equal 0, Scrabble.new.score("")
   end
 
+  def test_it_can_score_nil_word_as_0
+    assert_equal 0, Scrabble.new.score(nil)
+  end
+
 
 end
