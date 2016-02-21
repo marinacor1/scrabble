@@ -1,7 +1,13 @@
 require 'pry'
 class Scrabble
   def score(word)
-  
+    score = 0
+    return score if word.nil?
+    else
+      word.chars.each do |letter|
+        score += point_values[letter.upcase]
+      end
+    score
   end
 
   def point_values
