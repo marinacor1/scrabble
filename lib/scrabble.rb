@@ -1,6 +1,7 @@
+require 'pry'
 class Scrabble
   def score(word)
-    0
+  
   end
 
   def point_values
