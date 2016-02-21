@@ -36,5 +36,4 @@ class ScrabbleTest < Minitest::Test
     assert_equal 25, Scrabble.new.score("wvzfb")
   end
 
-
 end
