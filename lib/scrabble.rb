@@ -4,10 +4,9 @@ class Scrabble
     score = 0
     return score if word.nil?
     else
-      word.chars.each do |letter|
-        score += point_values[letter.upcase]
+      word.chars.inject(0) do |sum, letter|
+        sum += point_values[letter.upcase]
       end
-    score
   end
 
   def point_values
