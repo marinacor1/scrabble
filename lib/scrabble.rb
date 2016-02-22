@@ -6,6 +6,7 @@ class Scrabble
     else
       word.chars.inject(0) do |sum, letter|
         sum += point_values[letter.upcase]
+        sum
       end
   end
 
